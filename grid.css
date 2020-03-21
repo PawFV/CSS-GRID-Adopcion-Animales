@@ -1,0 +1,122 @@
+/*  <-- UTILITIES -->
+    IMG:        https://unsplash.com/ 
+                https://www.pexels.com/es-es/ 
+    CROP:       https://www.remove.bg/
+    GRADIENT:   https://cssgradient.io/
+ */
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    gap: 7px;
+}
+
+.grid-item-1 {
+    position: relative;
+    grid-column: 1/-1;
+    grid-row: 1/7;
+    padding: 0;
+}
+
+.grid-item-2 {
+    grid-row: 7/11;
+    grid-column: 1/5;
+    margin-left: 7px;
+}
+
+.grid-item-3 {
+    grid-row: 7/11;
+    grid-column: 5/7;
+}
+
+.grid-item-4 {
+    grid-row: 7/9;
+    grid-column: 7/11;
+    margin-right: 7px;
+}
+
+.grid-item-5 {
+    background-color: #4A565F;
+    grid-column: 7/9;
+    grid-row: 9/11;
+    text-align: center;
+}
+
+.grid-item-6 {
+    grid-column: 9/11;
+    grid-row: 9/11;
+    margin-right: 7px;
+    background-color: #35A784;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item-1 img {
+    filter: grayscale(20%);
+}
+
+.fas {
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.nextt {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.beforee {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+    z-index: 1;
+}
+
+.animal {
+    color: rgb(212, 212, 212);
+    margin-top: 13px;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.856);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.856);
+    text-shadow: 6px 4px 6px black;
+    letter-spacing: 20px;
+    font-family: 'Open Sans';
+}
+
+.adoptar {
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #F96F54;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #383838bd;
+}
+
+p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: white;
+}
